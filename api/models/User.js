@@ -2,17 +2,23 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 // define collection and schema
-var User = new Schema({
-  ddname: String,
+var UserSchema = new Schema({
+
   name: {
-    type: String
+    type: String,
+    required: true,
   },
   age: {
     type: Number
+  },
+  gender: {
+    type: String
   }
+
+
 },{
     collection: 'users'
 })
 
-module.exports = mongoose.model('User', User)
+module.exports = mongoose.model('User', UserSchema)
 

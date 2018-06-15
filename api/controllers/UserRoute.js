@@ -2,18 +2,19 @@ const express = require('express')
 const app = express()
 const router = express.Router()
 
-const User = require('./model')
+const User = require('../models/User')
 
 /*
   create
 */
 router.route('/create').post((req, res) => {
-  const new_user = new User(req.body)
-  //const new_user = new User({name: 'david'})
-  new_user.save()
-    .then(new_user => {res.status(200).json({'user': 'user created successfully'})
+  const user = new User(req.body)
+  user.save()
+    .then(user => 
+      {res.status(200).json({'user': 'user created successfully'})
     })
-    .catch(err => {res.status(400).send("unable to save user into database")
+    .catch(err => 
+      {res.status(400).send("unable to save user into database")
     })
 })
 
@@ -56,5 +57,22 @@ router.route('/update/:id').post((req, res) => {
 /*
   delete
 */
+router.route('/delete/:id').get((req, res) => {
+  User.findByIdAndRemove({_id: req.params.id}, (err, user) => {
+      if(err) res.json(err);
+      else res.json('Successfully removed');
+    });
+});
+
+/*
+  search
+*/
+router.route('/search/:id').get((req, res) => {
+  User.findOne({_id: req.params.id}, (err, user) => {
+    if(err) res.json(err);
+    else res.json('search find');
+  })
+})
+
 
 module.exports = router
