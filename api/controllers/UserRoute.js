@@ -57,7 +57,7 @@ router.route('/update/:id').post((req, res) => {
 /*
   delete
 */
-router.route('/delete/:id').get((req, res) => {
+router.route('/delete/:id').delete((req, res) => {
   User.findByIdAndRemove({_id: req.params.id}, (err, user) => {
       if(err) res.json(err);
       else res.json('Successfully removed');
