@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "APIDavid",
+		"_postman_id": "61749698-fb17-aec1-64a3-45ac6df4e49b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:4000/api/create",
+			"request": {
+				"url": "localhost:4000/api/update/5b27ba31e9f5dd06762e0978",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"frite\",\n\t\"age\": \"23\",\n\t\"gender\": \"F\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/show",
+			"request": {
+				"url": "localhost:4000/api/show",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/update/5b27ba31e9f5dd06762e0978",
+			"request": {
+				"url": "localhost:4000/api/update/5b27ba31e9f5dd06762e0978",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"frite\",\n\t\"age\": \"23\",\n\t\"gender\": \"F\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/search/5b27ba31e9f5dd06762e0978",
+			"request": {
+				"url": "localhost:4000/api/search/5b27ba31e9f5dd06762e0978",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/delete/5b27ba31e9f5dd06762e0978",
+			"request": {
+				"url": "localhost:4000/api/delete/5b27ba31e9f5dd06762e0978",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
