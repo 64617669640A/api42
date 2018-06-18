@@ -1,188 +1,124 @@
 {
-	"id": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
-	"name": "davidAPI",
-	"description": "",
-	"order": [
-		"a0427814-959e-62ad-5c0c-876029624f60",
-		"395c83a5-ab35-9062-d9fe-77259a17fe04",
-		"e797807a-e778-951a-09cf-4a44498a06cf",
-		"9e7d344f-68f2-b254-6467-e564a42d0c16",
-		"8075b1b8-14ec-9e56-14e0-eb2206fbd18c"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1529336366432,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "davidAPI",
+		"_postman_id": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "395c83a5-ab35-9062-d9fe-77259a17fe04",
-			"headers": "Content-Type: application/javascript\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/javascript",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:4000/api/show",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
-			"data": [],
-			"dataMode": "raw",
-			"name": "SHOW",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1529336888425,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"name\":\"david\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
-		},
-		{
-			"id": "8075b1b8-14ec-9e56-14e0-eb2206fbd18c",
-			"headers": "Content-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:4000/api/search/14894848",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
-			"data": [
-				{
-					"key": "login",
-					"value": "jbpotokar",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "password",
-					"value": "pre_record",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"name": "SEARCH",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1529337140177,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
-		},
-		{
-			"id": "9e7d344f-68f2-b254-6467-e564a42d0c16",
-			"headers": "Content-Type: application/javascript\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/javascript",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:4000/api/delete/14894848",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "DELETE",
-			"collectionId": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
-			"data": [],
-			"dataMode": "raw",
-			"name": "DELETE",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1529337083729,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"name\":\"patatae\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
-		},
-		{
-			"id": "a0427814-959e-62ad-5c0c-876029624f60",
-			"headers": "Content-Type: application/javascript\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/javascript",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:4000/api/create",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
-			"data": [],
-			"dataMode": "raw",
 			"name": "CREATE",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1529336935443,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"name\":\"david\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
+			"request": {
+				"url": "http://localhost:4000/api/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"david\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "e797807a-e778-951a-09cf-4a44498a06cf",
-			"headers": "Content-Type: application/javascript\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/javascript",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:4000/api/update/14894848",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "cd1f860f-2e9c-b940-1134-0a117a4bbcee",
-			"data": [],
-			"dataMode": "raw",
+			"name": "SHOW",
+			"request": {
+				"url": "http://localhost:4000/api/show",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"david\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "UPDATE",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1529336997417,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"name\":\"patatae\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
+			"request": {
+				"url": "http://localhost:4000/api/update/14894848",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"patatae\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"url": "http://localhost:4000/api/delete/14894848",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"patatae\",\n\t\"age\":22,\n\t\"gender\":\"M\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH",
+			"request": {
+				"url": "http://localhost:4000/api/search/14894848",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "login",
+							"value": "jbpotokar",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pre_record",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
